@@ -1,0 +1,13 @@
+# ninja log v5
+0	447	1586111129	obj/sample/main/main.o	3528d1ef51a34729
+447	453	1586111129	obj/sample/main.stamp	1e5b78765d7e693e
+453	646	1586111129	main	2ce578a0c9e02549
+453	646	1586111129	main.dSYM	2ce578a0c9e02549
+453	646	1586111129	main.dSYM/Contents/Info.plist	2ce578a0c9e02549
+453	646	1586111129	main.dSYM/Contents/Resources/DWARF/main	2ce578a0c9e02549
+0	454	1586111904	obj/sample/main/main.o	3528d1ef51a34729
+454	460	1586111904	obj/sample/main.stamp	1e5b78765d7e693e
+460	661	1586111904	main	2ce578a0c9e02549
+460	661	1586111904	main.dSYM	2ce578a0c9e02549
+460	661	1586111904	main.dSYM/Contents/Info.plist	2ce578a0c9e02549
+460	661	1586111904	main.dSYM/Contents/Resources/DWARF/main	2ce578a0c9e02549

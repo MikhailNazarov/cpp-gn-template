@@ -1,0 +1,12 @@
+defines = -DCR_XCODE_VERSION=1131 -D__ASSERT_MACROS_DEFINE_VERSIONS_WITHOUT_UNDERSCORE=0 -D_DEBUG
+include_dirs =
+cflags = -fno-strict-aliasing -fdiagnostics-color -arch x86_64 -fstack-protector-strong -O0 -fno-omit-frame-pointer -gdwarf-2 -fno-standalone-debug -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.9 -fvisibility=hidden
+cflags_cc = -fvisibility-inlines-hidden -stdlib=libc++ -std=c++11 -frtti -fexceptions
+label_name = main
+root_out_dir = .
+target_out_dir = obj/sample
+target_output_name = main
+
+build obj/sample/main/main.o: cxx ../../sample/main.cc
+
+build obj/sample/main.stamp: stamp obj/sample/main/main.o

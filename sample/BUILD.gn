@@ -1,0 +1,5 @@
+source_set("main"){
+    sources = [ 
+        "main.cc" 
+    ]
+}

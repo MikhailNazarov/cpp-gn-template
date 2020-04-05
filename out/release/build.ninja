@@ -1,0 +1,29 @@
+ninja_required_version = 1.7.2
+
+rule gn
+  command = ../../../../../../usr/local/bin/gn --root=../.. -q gen .
+  description = Regenerating ninja files
+
+build build.ninja: gn
+  generator = 1
+  depfile = build.ninja.d
+
+pool build_toolchain_action_pool
+  depth = 0
+
+pool build_toolchain_link_pool
+  depth = 0
+
+pool build_toolchain_mac_bundle_pool
+  depth = 0
+
+subninja toolchain.ninja
+
+build $:main: phony ./main
+build sample$:main: phony obj/sample/main.stamp
+
+build all: phony $
+    ./main $
+    obj/sample/main.stamp
+
+default all

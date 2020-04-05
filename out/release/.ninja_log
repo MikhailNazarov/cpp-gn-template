@@ -1,0 +1,7 @@
+# ninja log v5
+0	753	1586111367	obj/sample/main/main.o	f6ba546fc3d097f3
+753	758	1586111367	obj/sample/main.stamp	1e5b78765d7e693e
+758	953	1586111367	main	bc73d55dc1922875
+758	953	1586111367	main.dSYM	bc73d55dc1922875
+758	953	1586111367	main.dSYM/Contents/Info.plist	bc73d55dc1922875
+758	953	1586111367	main.dSYM/Contents/Resources/DWARF/main	bc73d55dc1922875

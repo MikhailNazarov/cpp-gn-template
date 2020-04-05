@@ -1,0 +1,14 @@
+defines = -DCR_XCODE_VERSION=1131 -D__ASSERT_MACROS_DEFINE_VERSIONS_WITHOUT_UNDERSCORE=0 -D_DEBUG
+include_dirs =
+label_name = main
+root_out_dir = .
+target_out_dir = obj
+target_output_name = main
+
+
+build ./main ./main.dSYM/ ./main.dSYM/Contents/Info.plist ./main.dSYM/Contents/Resources/DWARF/main: link obj/sample/main/main.o || obj/sample/main.stamp
+  ldflags = -stdlib=libc++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.9 -Wl,-ObjC -Wl,-pie
+  libs = -framework AppKit -framework ApplicationServices -framework Carbon -framework CoreFoundation -framework Foundation -framework IOKit -framework OpenGL -framework Security
+  frameworks =
+  output_extension = 
+  output_dir = .
